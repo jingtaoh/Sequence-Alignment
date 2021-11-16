@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/SequenceAlignment.h
+vector
+-
+string
+-
+unordered_map
+-
+algorithm
+-
+stack
+-
+
+/home/wentao/C++ code/SequenceAlignment/src/SequenceAlignment.cpp
+SequenceAlignment.h
+/home/wentao/C++ code/SequenceAlignment/src/SequenceAlignment.h
+
+/home/wentao/C++ code/SequenceAlignment/src/main.cpp
+iostream
+-
+fstream
+-
+string
+-
+SequenceAlignment.h
+/home/wentao/C++ code/SequenceAlignment/src/SequenceAlignment.h
+
