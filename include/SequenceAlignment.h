@@ -48,7 +48,7 @@ private:
 
     const int gap_penalty_;
     unordered_map<char, unordered_map<char, int>> mismatch_penalty_table_;
-    
+
     vector<vector<int>> OPT_;
 };
 
