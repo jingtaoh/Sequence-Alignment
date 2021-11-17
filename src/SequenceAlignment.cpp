@@ -1,19 +1,19 @@
 #include "SequenceAlignment.h"
 
-SequenceAlignment::SequenceAlignment(const string &s1, const string &s2) : gap_penalty_(30)
+SequenceAlignment::SequenceAlignment(const string& s1, const string& s2)
+    : gap_penalty_(30)
 {
     s1_ = s1;
     s2_ = s2;
     InitializePenaltyTable(mismatch_penalty_table_);
 
     OPT_.resize(s1_.size() + 1);
-    for (int i = 0; i <= s1_.size(); i++)
-    {
+    for (int i = 0; i <= s1_.size(); i++) {
         OPT_[i].resize(s2_.size() + 1);
     }
 }
 
-void SequenceAlignment::InitializePenaltyTable(unordered_map<char, unordered_map<char, int>> &table)
+void SequenceAlignment::InitializePenaltyTable(unordered_map<char, unordered_map<char, int>>& table)
 {
     table['A']['A'] = 0;
     table['A']['C'] = 110;
@@ -40,22 +40,19 @@ void SequenceAlignment::ComputeMinimumAlignmentCost()
 
     // Initialize edge case
     OPT_[0][0] = 0;
-    for (int i = 1; i < m; i++)
-    {
+    for (int i = 1; i < m; i++) {
         OPT_[i][0] = i * gap_penalty_;
     }
-    for (int i = 1; i < n; i++)
-    {
+    for (int i = 1; i < n; i++) {
         OPT_[0][i] = i * gap_penalty_;
     }
 
     // DP formula bottom-up
-    for (int i = 1; i < m; i++)
-    {
-        for (int j = 1; j < n; j++)
-        {
-            OPT_[i][j] = min(OPT_[i - 1][j - 1] + mismatch_penalty_table_[s1_[i - 1]][s2_[j - 1]],
-                             min(OPT_[i - 1][j] + gap_penalty_, OPT_[i][j - 1] + gap_penalty_));
+    for (int i = 1; i < m; i++) {
+        for (int j = 1; j < n; j++) {
+            OPT_[i][j] =
+                min(OPT_[i - 1][j - 1] + mismatch_penalty_table_[s1_[i - 1]][s2_[j - 1]],
+                    min(OPT_[i - 1][j] + gap_penalty_, OPT_[i][j - 1] + gap_penalty_));
         }
     }
 
@@ -74,25 +71,22 @@ stack<pair<int, int>> SequenceAlignment::ReconstructAlignment()
 
     stack<pair<int, int>> alignment;
 
-    while (i > 0 && j > 0)
-    {
+    while (i > 0 && j > 0) {
         // s1[i] is matched with s2[j]
-        if ((i - 1) >= 0 && (j - 1) >= 0 && OPT_[i][j] == OPT_[i - 1][j - 1] + mismatch_penalty_table_[s1_[i - 1]][s2_[j - 1]])
-        {
+        if ((i - 1) >= 0 && (j - 1) >= 0 &&
+            OPT_[i][j] == OPT_[i - 1][j - 1] + mismatch_penalty_table_[s1_[i - 1]][s2_[j - 1]]) {
             alignment.push({i - 1, j - 1});
             i--;
             j--;
         }
 
         // skip s1[i]
-        if ((i - 1) >= 0 && OPT_[i][j] == OPT_[i - 1][j] + gap_penalty_)
-        {
+        if ((i - 1) >= 0 && OPT_[i][j] == OPT_[i - 1][j] + gap_penalty_) {
             i--;
         }
 
         // skip s2[j]
-        if (j - 1 >= 0 && OPT_[i][j] == OPT_[i][j - 1] + gap_penalty_)
-        {
+        if (j - 1 >= 0 && OPT_[i][j] == OPT_[i][j - 1] + gap_penalty_) {
             j--;
         }
     }

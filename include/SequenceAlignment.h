@@ -1,11 +1,11 @@
 #ifndef SEQUENCE_ALIGNMENT_H
 #define SEQUENCE_ALIGNMENT_H
 
-#include <vector>
-#include <string>
-#include <unordered_map>
 #include <algorithm>
 #include <stack>
+#include <string>
+#include <unordered_map>
+#include <vector>
 
 using namespace std;
 
@@ -13,13 +13,13 @@ class SequenceAlignment
 {
 public:
     /**
-     * @brief: Initialize mismatch penalty table and gap penalty; 
+     * @brief: Initialize mismatch penalty table and gap penalty;
      *         Record two input strings;
      *         Initialize 2D matrix to store minimum cost.
      * @param: s1: input string 1
      * @param: s2: input string 2
      **/
-    SequenceAlignment(const string &s1, const string &s2);
+    SequenceAlignment(const string& s1, const string& s2);
 
     ~SequenceAlignment() {}
 
@@ -40,7 +40,7 @@ public:
     vector<vector<int>> GetOptTable();
 
 private:
-    void InitializePenaltyTable(unordered_map<char, unordered_map<char, int>> &table);
+    void InitializePenaltyTable(unordered_map<char, unordered_map<char, int>>& table);
 
 private:
     string s1_;
