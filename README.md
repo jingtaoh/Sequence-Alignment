@@ -3,7 +3,7 @@
 Compile & Run:  
 cd build  
 cmake ..  
-make .  
+make  
 ./main  
 
 Note  
