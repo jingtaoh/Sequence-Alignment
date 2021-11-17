@@ -7,15 +7,21 @@
 #IncludeRegexTransform: 
 
 ../include/SequenceAlignment.h
-vector
+algorithm
+-
+iostream
+-
+map
+-
+stack
 -
 string
 -
 unordered_map
 -
-algorithm
+unordered_set
 -
-stack
+vector
 -
 
 /home/wentao/C++ code/SequenceAlignment/src/SequenceAlignment.cpp
@@ -23,12 +29,14 @@ SequenceAlignment.h
 /home/wentao/C++ code/SequenceAlignment/src/SequenceAlignment.h
 
 /home/wentao/C++ code/SequenceAlignment/src/main.cpp
-iostream
--
 fstream
+-
+iostream
 -
 string
 -
 SequenceAlignment.h
 /home/wentao/C++ code/SequenceAlignment/src/SequenceAlignment.h
+time.h
+/home/wentao/C++ code/SequenceAlignment/src/time.h
 

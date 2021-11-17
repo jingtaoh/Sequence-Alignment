@@ -1,8 +1,8 @@
 #include <fstream>
 #include <iostream>
 #include <string>
-
 #include "SequenceAlignment.h"
+#include "time.h"
 
 /**
  * @brief: Read input from a given file
@@ -22,7 +22,7 @@ string InputGenerator(const string& base_str, const vector<int>& indices);
 int main(int argc, char** argv)
 {
     // Read from file
-    string input_file = "../data/data1.txt"; // input data file
+    string input_file = "../data/input.txt"; // input data file
     vector<string> strs; // base strings
     vector<vector<int>> indices(2, vector<int>()); // indices
     ReadFile(input_file, strs, indices);
@@ -31,12 +31,19 @@ int main(int argc, char** argv)
     string s1 = InputGenerator(strs[0], indices[0]);
     string s2 = InputGenerator(strs[1], indices[1]);
     cout << "String 1: " << s1 << endl;
-    cout << "String 2: " << s2 << endl;
+    cout << "String 2: " << s2 << endl << endl;
 
-    // Compute OPT value table
-    SequenceAlignment sa(s1, s2);
-    sa.ComputeMinimumAlignmentCost();
-    vector<vector<int>> OPT = sa.GetOptTable();
+    // Define clock
+    clock_t start1, end1, start2, end2;
+
+    // Define object
+    SequenceAlignment sa;
+
+    // method 1 - Compute OPT value table
+    cout << "method1: " << endl;
+    start1 = clock();
+    vector<vector<int>> OPT = sa.ComputeMinimumAlignmentCost(s1, s2);
+    /*// Print OPT table
     cout << "OPT table: " << endl;
     for (int i = 0; i < OPT.size(); i++) {
         for (int j = 0; j < OPT[0].size(); j++) {
@@ -44,14 +51,30 @@ int main(int argc, char** argv)
         }
         cout << endl;
     }
+    cout << endl;*/
 
-    // Reconstruct alignment
-    stack<pair<int, int>> alignment = sa.ReconstructAlignment();
+    // method 1 - Reconstruct alignment
+    stack<pair<int, int>> alignment = sa.ReconstructAlignment(OPT, s1, s2);
     while (!alignment.empty()) {
         pair<int, int> match = alignment.top();
         alignment.pop();
-        cout << s1[match.first] << match.first << " - " << s2[match.second] << match.second << endl;
+        // cout << s1[match.first] << match.first << " - " << s2[match.second] << match.second <<
+        // endl;
     }
+    // cout << endl;
+    end1 = clock();
+    cout << "Method1 runtime: " << (double)(end1 - start1) / CLOCKS_PER_SEC << endl;
+
+    // method 2
+    cout << "method2: " << endl;
+    start2 = clock();
+    map<int, int> matches = sa.DivideAndConquerAlignment(s1, s2);
+    for (auto e : matches) {
+        // cout << s1[e.first] << e.first << " - " << s2[e.second] << e.second << endl;
+    }
+    // cout << endl;
+    end2 = clock();
+    cout << "Method2 runtime: " << (double)(end2 - start2) / CLOCKS_PER_SEC << endl;
 
     cout << "Exit Program..." << endl;
     return 0;
@@ -73,13 +96,13 @@ void ReadFile(const string& filename, vector<string>& strs, vector<vector<int>>&
         if (isalpha(s[0])) {
             // Add a base string
             strs.push_back(s);
-            cout << "Base String " << strs.size() - 1 << ": " << s << endl;
+            //// cout << "Base String " << strs.size() - 1 << ": " << s << endl;
         } else if (isdigit(s[0])) {
             // Add a series of indices
             if (strs.size() - 1 < 0) {
                 continue;
             } else {
-                cout << stoi(s) << endl;
+                //// cout << stoi(s) << endl;
                 indices[strs.size() - 1].push_back(stoi(s));
             }
         }

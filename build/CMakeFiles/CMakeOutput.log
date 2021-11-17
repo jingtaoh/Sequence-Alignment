@@ -28,28 +28,28 @@ The CXX compiler identification is GNU, found in "/home/wentao/C++ code/Sequence
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_05ea9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_05ea9.dir/build.make CMakeFiles/cmTC_05ea9.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_50c63/fast"
+/usr/bin/make -f CMakeFiles/cmTC_50c63.dir/build.make CMakeFiles/cmTC_50c63.dir/build
 make[1]: Entering directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_05ea9.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_05ea9.dir/testCCompiler.c.o   -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp/testCCompiler.c"
-Linking C executable cmTC_05ea9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05ea9.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_05ea9.dir/testCCompiler.c.o  -o cmTC_05ea9 
+Building C object CMakeFiles/cmTC_50c63.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_50c63.dir/testCCompiler.c.o   -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp/testCCompiler.c"
+Linking C executable cmTC_50c63
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50c63.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_50c63.dir/testCCompiler.c.o  -o cmTC_50c63 
 make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b8f8f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b8f8f.dir/build.make CMakeFiles/cmTC_b8f8f.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6bf54/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6bf54.dir/build.make CMakeFiles/cmTC_6bf54.dir/build
 make[1]: Entering directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b8f8f.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_b8f8f.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_b8f8f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8f8f.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_b8f8f.dir/CMakeCCompilerABI.c.o  -o cmTC_b8f8f 
+Building C object CMakeFiles/cmTC_6bf54.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6bf54.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_6bf54
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6bf54.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_6bf54.dir/CMakeCCompilerABI.c.o  -o cmTC_6bf54 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -61,9 +61,9 @@ Thread model: posix
 gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b8f8f' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqbHJ2n.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b8f8f /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_b8f8f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b8f8f' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6bf54' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccheOfw8.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_6bf54 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_6bf54.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6bf54' '-mtune=generic' '-march=x86-64'
 make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
 
 
@@ -71,14 +71,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_b8f8f/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_b8f8f.dir/build.make CMakeFiles/cmTC_b8f8f.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_6bf54/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_6bf54.dir/build.make CMakeFiles/cmTC_6bf54.dir/build]
   ignore line: [make[1]: Entering directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_b8f8f.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_b8f8f.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_b8f8f]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8f8f.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_b8f8f.dir/CMakeCCompilerABI.c.o  -o cmTC_b8f8f ]
+  ignore line: [Building C object CMakeFiles/cmTC_6bf54.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_6bf54.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_6bf54]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6bf54.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_6bf54.dir/CMakeCCompilerABI.c.o  -o cmTC_6bf54 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -90,13 +90,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b8f8f' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqbHJ2n.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b8f8f /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_b8f8f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6bf54' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccheOfw8.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_6bf54 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_6bf54.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccqbHJ2n.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccheOfw8.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -114,7 +114,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_b8f8f] ==> ignore
+    arg [cmTC_6bf54] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -126,7 +126,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_b8f8f.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_6bf54.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -158,14 +158,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4588a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4588a.dir/build.make CMakeFiles/cmTC_4588a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_2ae2a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2ae2a.dir/build.make CMakeFiles/cmTC_2ae2a.dir/build
 make[1]: Entering directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4588a.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_4588a.dir/feature_tests.c.o   -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_4588a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4588a.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_4588a.dir/feature_tests.c.o  -o cmTC_4588a 
+Building C object CMakeFiles/cmTC_2ae2a.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_2ae2a.dir/feature_tests.c.o   -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_2ae2a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ae2a.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_2ae2a.dir/feature_tests.c.o  -o cmTC_2ae2a 
 make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
 
 
@@ -178,14 +178,14 @@ make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeF
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c6ad5/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c6ad5.dir/build.make CMakeFiles/cmTC_c6ad5.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_14f82/fast"
+/usr/bin/make -f CMakeFiles/cmTC_14f82.dir/build.make CMakeFiles/cmTC_14f82.dir/build
 make[1]: Entering directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c6ad5.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_c6ad5.dir/feature_tests.c.o   -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_c6ad5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6ad5.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_c6ad5.dir/feature_tests.c.o  -o cmTC_c6ad5 
+Building C object CMakeFiles/cmTC_14f82.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_14f82.dir/feature_tests.c.o   -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_14f82
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14f82.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_14f82.dir/feature_tests.c.o  -o cmTC_14f82 
 make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
 
 
@@ -198,14 +198,14 @@ make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeF
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cd9c7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cd9c7.dir/build.make CMakeFiles/cmTC_cd9c7.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_85526/fast"
+/usr/bin/make -f CMakeFiles/cmTC_85526.dir/build.make CMakeFiles/cmTC_85526.dir/build
 make[1]: Entering directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cd9c7.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_cd9c7.dir/feature_tests.c.o   -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_cd9c7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd9c7.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_cd9c7.dir/feature_tests.c.o  -o cmTC_cd9c7 
+Building C object CMakeFiles/cmTC_85526.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_85526.dir/feature_tests.c.o   -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_85526
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85526.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_85526.dir/feature_tests.c.o  -o cmTC_85526 
 make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
 
 
@@ -216,28 +216,28 @@ make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeF
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8e368/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8e368.dir/build.make CMakeFiles/cmTC_8e368.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ec264/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ec264.dir/build.make CMakeFiles/cmTC_ec264.dir/build
 make[1]: Entering directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8e368.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_8e368.dir/testCXXCompiler.cxx.o -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
-Linking CXX executable cmTC_8e368
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e368.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_8e368.dir/testCXXCompiler.cxx.o  -o cmTC_8e368 
+Building CXX object CMakeFiles/cmTC_ec264.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_ec264.dir/testCXXCompiler.cxx.o -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
+Linking CXX executable cmTC_ec264
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec264.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_ec264.dir/testCXXCompiler.cxx.o  -o cmTC_ec264 
 make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7d245/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7d245.dir/build.make CMakeFiles/cmTC_7d245.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_fd406/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fd406.dir/build.make CMakeFiles/cmTC_fd406.dir/build
 make[1]: Entering directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7d245.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_7d245.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_7d245
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d245.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_7d245.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_7d245 
+Building CXX object CMakeFiles/cmTC_fd406.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_fd406.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_fd406
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd406.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_fd406.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_fd406 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -249,9 +249,9 @@ Thread model: posix
 gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d245' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnJ2pNN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_7d245 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_7d245.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d245' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fd406' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKkzmaz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fd406 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_fd406.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fd406' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
 make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
 
 
@@ -259,14 +259,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_7d245/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_7d245.dir/build.make CMakeFiles/cmTC_7d245.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_fd406/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_fd406.dir/build.make CMakeFiles/cmTC_fd406.dir/build]
   ignore line: [make[1]: Entering directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_7d245.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_7d245.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_7d245]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d245.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_7d245.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_7d245 ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_fd406.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_fd406.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_fd406]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd406.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_fd406.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_fd406 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -278,13 +278,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d245' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnJ2pNN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_7d245 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_7d245.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fd406' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKkzmaz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fd406 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_fd406.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccnJ2pNN.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccKkzmaz.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -302,7 +302,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_7d245] ==> ignore
+    arg [cmTC_fd406] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -314,7 +314,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_7d245.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_fd406.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -342,14 +342,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: /home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0a635/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0a635.dir/build.make CMakeFiles/cmTC_0a635.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_43ba7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_43ba7.dir/build.make CMakeFiles/cmTC_43ba7.dir/build
 make[1]: Entering directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_0a635.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_0a635.dir/feature_tests.cxx.o -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_0a635
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a635.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_0a635.dir/feature_tests.cxx.o  -o cmTC_0a635 
+Building CXX object CMakeFiles/cmTC_43ba7.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_43ba7.dir/feature_tests.cxx.o -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_43ba7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43ba7.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_43ba7.dir/feature_tests.cxx.o  -o cmTC_43ba7 
 make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
 
 
@@ -415,14 +415,14 @@ make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeF
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ae74e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ae74e.dir/build.make CMakeFiles/cmTC_ae74e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_357fc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_357fc.dir/build.make CMakeFiles/cmTC_357fc.dir/build
 make[1]: Entering directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ae74e.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_ae74e.dir/feature_tests.cxx.o -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_ae74e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae74e.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_ae74e.dir/feature_tests.cxx.o  -o cmTC_ae74e 
+Building CXX object CMakeFiles/cmTC_357fc.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_357fc.dir/feature_tests.cxx.o -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_357fc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_357fc.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_357fc.dir/feature_tests.cxx.o  -o cmTC_357fc 
 make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
 
 
@@ -488,14 +488,14 @@ make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeF
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6e362/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6e362.dir/build.make CMakeFiles/cmTC_6e362.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c63df/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c63df.dir/build.make CMakeFiles/cmTC_c63df.dir/build
 make[1]: Entering directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6e362.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_6e362.dir/feature_tests.cxx.o -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_6e362
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e362.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_6e362.dir/feature_tests.cxx.o  -o cmTC_6e362 
+Building CXX object CMakeFiles/cmTC_c63df.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_c63df.dir/feature_tests.cxx.o -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_c63df
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c63df.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_c63df.dir/feature_tests.cxx.o  -o cmTC_c63df 
 make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
 
 
@@ -561,14 +561,14 @@ make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeF
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_18232/fast"
-/usr/bin/make -f CMakeFiles/cmTC_18232.dir/build.make CMakeFiles/cmTC_18232.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_d28af/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d28af.dir/build.make CMakeFiles/cmTC_d28af.dir/build
 make[1]: Entering directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_18232.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_18232.dir/feature_tests.cxx.o -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_18232
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18232.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_18232.dir/feature_tests.cxx.o  -o cmTC_18232 
+Building CXX object CMakeFiles/cmTC_d28af.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_d28af.dir/feature_tests.cxx.o -c "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_d28af
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d28af.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_d28af.dir/feature_tests.cxx.o  -o cmTC_d28af 
 make[1]: Leaving directory '/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/CMakeTmp'
 
 
