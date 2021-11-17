@@ -1,7 +1,7 @@
 # CSCI570_Final_Project
 
-Compile & Run:
-cd build
-cmake ..
-make .
+Compile & Run://
+cd build//
+cmake ..//
+make .//
 ./main
