@@ -66,7 +66,7 @@ stack<pair<int, int>> SequenceAlignment::ReconstructAlignment(
     stack<pair<int, int>> alignment;
     // The optimal alignment is not unique
     // Below is one of the ways to reconstruct alignment
-    while (i > 0 && j > 0) {
+    while (i > 0 || j > 0) {
         if (j - 1 >= 0 && table[i][j] == (table[i][j - 1] + gap_penalty_)) {
             // skip s2[j]
             j--;
