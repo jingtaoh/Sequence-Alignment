@@ -34,18 +34,11 @@ public:
     vector<vector<int>> ComputeMinimumAlignmentCost(const string& _s1, const string& _s2);
 
     /**
-     * @brief: D&C helper function
-     * @param: s1: input string 1
-     * @param: s2: input string 2
-     **/
-    stack<pair<int, int>> DivideAndConquerAlignmentHelper(const string& _s1, const string& _s2);
-
-    /**
      * @brief: D&C + DP to solve sequence alignment
      * @param: s1: input string 1
      * @param: s2: input string 2
      **/
-    map<int, int> DivideAndConquerAlignment(const string& _s1, const string& _s2);
+    vector<pair<char, char>> DivideAndConquerAlignment1(const string& _s1, const string& _s2);
 
     /**
      * @brief: Space efficient way to compute the last row of the OPT table
@@ -61,7 +54,7 @@ public:
      * @param: s2: input string 2
      * @return: matched pairs
      **/
-    stack<pair<int, int>>
+    vector<pair<char, char>>
     ReconstructAlignment(vector<vector<int>>& table, const string& _s1, const string& _s2);
 
 private:
