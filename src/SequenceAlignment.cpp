@@ -89,7 +89,7 @@ vector<pair<char, char>> SequenceAlignment::ReconstructAlignment(
     return alignment;
 }
 
-vector<pair<char, char>> SequenceAlignment::DivideAndConquerAlignment1(
+vector<pair<char, char>> SequenceAlignment::DivideAndConquerAlignment(
     const string& _s1,
     const string& _s2)
 {
@@ -103,6 +103,7 @@ vector<pair<char, char>> SequenceAlignment::DivideAndConquerAlignment1(
     vector<pair<char, char>> res;
 
     // Divide
+    // TODO: split the longest
     int s1_mid = _s1.size() / 2;
     string s1_left_part = _s1.substr(0, s1_mid);
     vector<int> cost_left = SpaceEfficientAlignment(s1_left_part, _s2);
@@ -123,8 +124,8 @@ vector<pair<char, char>> SequenceAlignment::DivideAndConquerAlignment1(
 
     // Conquer
     auto res_left =
-        DivideAndConquerAlignment1(s1_left_part, _s2.substr(0, s2_optimal_divide_length));
-    auto res_right = DivideAndConquerAlignment1(
+        DivideAndConquerAlignment(s1_left_part, _s2.substr(0, s2_optimal_divide_length));
+    auto res_right = DivideAndConquerAlignment(
         s1_right_part,
         _s2.substr(s2_optimal_divide_length, _s2.size() - s2_optimal_divide_length));
 

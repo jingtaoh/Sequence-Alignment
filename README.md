@@ -20,10 +20,10 @@ make
 # %M - Maximum resident set size of the process during its lifetime (in Kbytes).
 
 # Measure basic program
-/usr/bin/time  -a -f "%e\n%M" -o ../data/output_basic.txt ./basic ../data/input.txt
+/usr/bin/time -a -f "%e\n%M" -o ../data/output_basic.txt ./basic ../data/input.txt
 
 # Measure efficient program
-/usr/bin/time  -a -f "%e\n%M" -o ../data/output_efficient.txt ./efficient ../data/input.txt
+/usr/bin/time -a -f "%e\n%M" -o ../data/output_efficient.txt ./efficient ../data/input.txt
 ```
 
 ## Note  

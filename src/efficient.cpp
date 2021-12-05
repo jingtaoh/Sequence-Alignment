@@ -19,7 +19,7 @@ int main(int argc, char** argv)
     // Define object
     SequenceAlignment sa;
 
-    auto alignment = sa.DivideAndConquerAlignment1(s1, s2);
+    auto alignment = sa.DivideAndConquerAlignment(s1, s2);
 
     // TODO: figure out what opt value is
 
