@@ -1,23 +1,14 @@
 # CSCI570_Final_Project
-The project is related to the implementation of the two different solutions provided in chapter 6 of the Kleinberg textbook for the Sequence Alignment problem (see [project description](CSCI570_Fall2021_FinalProject.pdf)).
+The project is the c++ implementation of the two different solutions provided in chapter 6 of the Kleinberg textbook for the Sequence Alignment problem (see [project description](CSCI570_Fall2021_FinalProject.pdf)).
 - [x] [Basic](src/basic.cpp) implementation
-- [x] [Efficient](src/efficient.cpp) implementation
+- [x] [Memory efficient](src/efficient.cpp) implementation
+- [x] [Shell script](run.sh)
 - [x] [Graphs](graphs)
 - [ ] Summary
-- [ ] Shell script
 
 ## Compile & Run
 ```bash
-# Compile
-cd build  
-cmake ..  
-make  
-
-# Run basic program
-./basic ../data/input.txt
-
-# Run efficient program
-./efficient ../data/input.txt
+./run.sh
 ```
 ## Measure time & memory performance
 ```bash
@@ -32,7 +23,13 @@ make
 /usr/bin/time -a -f "%e\n%M" -o ../data/output_efficient.txt ./efficient ../data/input.txt
 ```
 ## Graphs
+```bash
+gnuplot --persist ../graphs/time_plot.p
+```
 ![CPU time plot](graphs/CPUPlot.png)
+```bash
+gnuplot --persist ../graphs/memory_plot.p
+```
 ![Memory usage plot](graphs/MemoryPlot.png)
 
 ## Note  

@@ -8,5 +8,5 @@ set title "Graph #2 Memory Plot" font ",12"
 set xlabel "Problem Size" font ",12"
 set ylabel "Memory (kbs)" font ",12"
 set key font ",11"
-plot    "../data/basic.dat" using 1:3 t 'basic' w lp lw 2 lt rgb "#F44336", \
-        "../data/efficient.dat" using 1:3 t 'efficient' w lp lw 2 lt rgb "#8CC24A"
+plot    "../graphs/basic.dat" using 1:3 t 'basic' w lp lw 2 lt rgb "#F44336", \
+        "../graphs/efficient.dat" using 1:3 t 'efficient' w lp lw 2 lt rgb "#8CC24A"
