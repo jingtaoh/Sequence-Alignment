@@ -92,7 +92,7 @@ string InputGenerator(const string& base_str, const vector<int>& indices)
     }
     return res;
 }
-
+/*
 string OutputGenerator(string& program, string& input_file)
 {
     program = fs::path(program).filename();
@@ -100,3 +100,4 @@ string OutputGenerator(string& program, string& input_file)
     output_file.insert(output_file.find(".txt"), '_' + program);
     return output_file;
 }
+*/

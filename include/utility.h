@@ -5,10 +5,10 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <filesystem>
+// #include <filesystem>
 
 using namespace std;
-namespace fs = std::filesystem;
+// namespace fs = std::filesystem;
 
 /**
  * @brief: Read input from a given file
@@ -39,6 +39,6 @@ string InputGenerator(const string& base_str, const vector<int>& indices);
  * @param input_file input filename
  * @return output filename
  */
-string OutputGenerator(string& program, string& input_file);
+// string OutputGenerator(string& program, string& input_file);
 
 #endif

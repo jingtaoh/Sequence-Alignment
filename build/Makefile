@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/wentao/C++ code/SequenceAlignment"
+CMAKE_SOURCE_DIR = "/home/wentao/C++ code/CSCI570_Final_Project"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/wentao/C++ code/SequenceAlignment/build"
+CMAKE_BINARY_DIR = "/home/wentao/C++ code/CSCI570_Final_Project/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles" "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/wentao/C++ code/CSCI570_Final_Project/build/CMakeFiles" "/home/wentao/C++ code/CSCI570_Final_Project/build/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/wentao/C++ code/CSCI570_Final_Project/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named basic
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+basic: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 basic
+.PHONY : basic
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+basic/fast:
+	$(MAKE) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/build
+.PHONY : basic/fast
+
+#=============================================================================
+# Target rules for targets named efficient
+
+# Build rule for target.
+efficient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 efficient
+.PHONY : efficient
+
+# fast build rule for target.
+efficient/fast:
+	$(MAKE) -f CMakeFiles/efficient.dir/build.make CMakeFiles/efficient.dir/build
+.PHONY : efficient/fast
 
 src/SequenceAlignment.o: src/SequenceAlignment.cpp.o
 
@@ -129,7 +142,8 @@ src/SequenceAlignment.o: src/SequenceAlignment.cpp.o
 
 # target to build an object file
 src/SequenceAlignment.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SequenceAlignment.cpp.o
+	$(MAKE) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/SequenceAlignment.cpp.o
+	$(MAKE) -f CMakeFiles/efficient.dir/build.make CMakeFiles/efficient.dir/src/SequenceAlignment.cpp.o
 .PHONY : src/SequenceAlignment.cpp.o
 
 src/SequenceAlignment.i: src/SequenceAlignment.cpp.i
@@ -138,7 +152,8 @@ src/SequenceAlignment.i: src/SequenceAlignment.cpp.i
 
 # target to preprocess a source file
 src/SequenceAlignment.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SequenceAlignment.cpp.i
+	$(MAKE) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/SequenceAlignment.cpp.i
+	$(MAKE) -f CMakeFiles/efficient.dir/build.make CMakeFiles/efficient.dir/src/SequenceAlignment.cpp.i
 .PHONY : src/SequenceAlignment.cpp.i
 
 src/SequenceAlignment.s: src/SequenceAlignment.cpp.s
@@ -147,35 +162,93 @@ src/SequenceAlignment.s: src/SequenceAlignment.cpp.s
 
 # target to generate assembly for a file
 src/SequenceAlignment.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SequenceAlignment.cpp.s
+	$(MAKE) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/SequenceAlignment.cpp.s
+	$(MAKE) -f CMakeFiles/efficient.dir/build.make CMakeFiles/efficient.dir/src/SequenceAlignment.cpp.s
 .PHONY : src/SequenceAlignment.cpp.s
 
-src/main.o: src/main.cpp.o
+src/basic.o: src/basic.cpp.o
 
-.PHONY : src/main.o
+.PHONY : src/basic.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/basic.cpp.o:
+	$(MAKE) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/basic.cpp.o
+.PHONY : src/basic.cpp.o
 
-src/main.i: src/main.cpp.i
+src/basic.i: src/basic.cpp.i
 
-.PHONY : src/main.i
+.PHONY : src/basic.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/basic.cpp.i:
+	$(MAKE) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/basic.cpp.i
+.PHONY : src/basic.cpp.i
 
-src/main.s: src/main.cpp.s
+src/basic.s: src/basic.cpp.s
 
-.PHONY : src/main.s
+.PHONY : src/basic.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/basic.cpp.s:
+	$(MAKE) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/basic.cpp.s
+.PHONY : src/basic.cpp.s
+
+src/efficient.o: src/efficient.cpp.o
+
+.PHONY : src/efficient.o
+
+# target to build an object file
+src/efficient.cpp.o:
+	$(MAKE) -f CMakeFiles/efficient.dir/build.make CMakeFiles/efficient.dir/src/efficient.cpp.o
+.PHONY : src/efficient.cpp.o
+
+src/efficient.i: src/efficient.cpp.i
+
+.PHONY : src/efficient.i
+
+# target to preprocess a source file
+src/efficient.cpp.i:
+	$(MAKE) -f CMakeFiles/efficient.dir/build.make CMakeFiles/efficient.dir/src/efficient.cpp.i
+.PHONY : src/efficient.cpp.i
+
+src/efficient.s: src/efficient.cpp.s
+
+.PHONY : src/efficient.s
+
+# target to generate assembly for a file
+src/efficient.cpp.s:
+	$(MAKE) -f CMakeFiles/efficient.dir/build.make CMakeFiles/efficient.dir/src/efficient.cpp.s
+.PHONY : src/efficient.cpp.s
+
+src/utility.o: src/utility.cpp.o
+
+.PHONY : src/utility.o
+
+# target to build an object file
+src/utility.cpp.o:
+	$(MAKE) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/utility.cpp.o
+	$(MAKE) -f CMakeFiles/efficient.dir/build.make CMakeFiles/efficient.dir/src/utility.cpp.o
+.PHONY : src/utility.cpp.o
+
+src/utility.i: src/utility.cpp.i
+
+.PHONY : src/utility.i
+
+# target to preprocess a source file
+src/utility.cpp.i:
+	$(MAKE) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/utility.cpp.i
+	$(MAKE) -f CMakeFiles/efficient.dir/build.make CMakeFiles/efficient.dir/src/utility.cpp.i
+.PHONY : src/utility.cpp.i
+
+src/utility.s: src/utility.cpp.s
+
+.PHONY : src/utility.s
+
+# target to generate assembly for a file
+src/utility.cpp.s:
+	$(MAKE) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/utility.cpp.s
+	$(MAKE) -f CMakeFiles/efficient.dir/build.make CMakeFiles/efficient.dir/src/utility.cpp.s
+.PHONY : src/utility.cpp.s
 
 # Help Target
 help:
@@ -184,14 +257,21 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... main"
 	@echo "... edit_cache"
+	@echo "... basic"
+	@echo "... efficient"
 	@echo "... src/SequenceAlignment.o"
 	@echo "... src/SequenceAlignment.i"
 	@echo "... src/SequenceAlignment.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/basic.o"
+	@echo "... src/basic.i"
+	@echo "... src/basic.s"
+	@echo "... src/efficient.o"
+	@echo "... src/efficient.i"
+	@echo "... src/efficient.s"
+	@echo "... src/utility.o"
+	@echo "... src/utility.i"
+	@echo "... src/utility.s"
 .PHONY : help
 
 

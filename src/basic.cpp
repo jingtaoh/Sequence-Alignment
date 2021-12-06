@@ -25,8 +25,8 @@ int main(int argc, char** argv)
     auto alignment = sa.ReconstructAlignment(OPT_table, s1, s2);
 
     // Generate output filename
-    string output_file = OutputGenerator(program, input_file);
+    //string output_file = OutputGenerator(program, input_file);
 
-    WriteFile(output_file, alignment, OPT_value);
+    WriteFile("../data/out.txt", alignment, OPT_value);
     return 0;
 }

@@ -1,3 +1,4 @@
-/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/rebuild_cache.dir
-/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/main.dir
-/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/edit_cache.dir
+/home/wentao/C++ code/CSCI570_Final_Project/build/CMakeFiles/rebuild_cache.dir
+/home/wentao/C++ code/CSCI570_Final_Project/build/CMakeFiles/edit_cache.dir
+/home/wentao/C++ code/CSCI570_Final_Project/build/CMakeFiles/basic.dir
+/home/wentao/C++ code/CSCI570_Final_Project/build/CMakeFiles/efficient.dir

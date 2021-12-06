@@ -21,8 +21,8 @@ int main(int argc, char** argv)
     auto alignment = sa.DivideAndConquerAlignment(s1, s2, OPT_value);
 
     // Generate output filename
-    string output_file = OutputGenerator(program, input_file);
+    // string output_file = OutputGenerator(program, input_file);
 
-    WriteFile(output_file, alignment, OPT_value);
+    WriteFile("../data/out.txt", alignment, OPT_value);
     return 0;
 }
