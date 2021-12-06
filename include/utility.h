@@ -25,7 +25,7 @@ void ReadFile(const string& filename, vector<string>& strs, vector<vector<int>>&
  * @param opt_value
  * @param time
  */
-void WriteFile(const string& filename, const vector<pair<char, char>>& alignment);
+void WriteFile(const string& filename, const vector<pair<char, char>>& alignment, int opt_value);
 
 /**
  * @brief: Generate cumulative string

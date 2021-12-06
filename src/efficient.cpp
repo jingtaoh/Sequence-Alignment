@@ -17,11 +17,12 @@ int main(int argc, char** argv)
     // Define object
     SequenceAlignment sa;
 
-    auto alignment = sa.DivideAndConquerAlignment(s1, s2);
+    int OPT_value = 0;
+    auto alignment = sa.DivideAndConquerAlignment(s1, s2, OPT_value);
 
     // Generate output filename
     string output_file = OutputGenerator(program, input_file);
 
-    WriteFile(output_file, alignment);
+    WriteFile(output_file, alignment, OPT_value);
     return 0;
 }

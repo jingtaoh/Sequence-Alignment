@@ -33,7 +33,7 @@ void ReadFile(const string& filename, vector<string>& strs, vector<vector<int>>&
     return;
 }
 
-void WriteFile(const string& filename, const vector<pair<char, char>>& alignment)
+void WriteFile(const string& filename, const vector<pair<char, char>>& alignment, int opt_value)
 {
     ofstream outFile{filename};
 
@@ -75,7 +75,7 @@ void WriteFile(const string& filename, const vector<pair<char, char>>& alignment
     outFile << endl;
 
     // Print OPT value
-    //    outFile << opt_value << endl;
+    outFile << opt_value << endl;
 }
 
 string InputGenerator(const string& base_str, const vector<int>& indices)

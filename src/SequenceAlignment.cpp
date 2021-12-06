@@ -89,9 +89,8 @@ vector<pair<char, char>> SequenceAlignment::ReconstructAlignment(
     return alignment;
 }
 
-vector<pair<char, char>> SequenceAlignment::DivideAndConquerAlignment(
-    const string& _s1,
-    const string& _s2)
+vector<pair<char, char>>
+SequenceAlignment::DivideAndConquerAlignment(const string& _s1, const string& _s2, int& opt_value)
 {
     // Base Case
     if (_s1.size() <= 2 || _s2.size() <= 2) {
@@ -103,7 +102,6 @@ vector<pair<char, char>> SequenceAlignment::DivideAndConquerAlignment(
     vector<pair<char, char>> res;
 
     // Divide
-    // TODO: split the longest
     int s1_mid = _s1.size() / 2;
     string s1_left_part = _s1.substr(0, s1_mid);
     vector<int> cost_left = SpaceEfficientAlignment(s1_left_part, _s2);
@@ -121,13 +119,18 @@ vector<pair<char, char>> SequenceAlignment::DivideAndConquerAlignment(
     int s2_optimal_divide_length =
         std::min_element(cost.begin(), cost.end()) - cost.begin(); // One of optimal cut lengths
     //    cout << "s2_optimal_divide_length: " << s2_optimal_divide_length << endl;
+    opt_value = cost[s2_optimal_divide_length];
 
+    int dummy;
     // Conquer
-    auto res_left =
-        DivideAndConquerAlignment(s1_left_part, _s2.substr(0, s2_optimal_divide_length));
+    auto res_left = DivideAndConquerAlignment(
+        s1_left_part,
+        _s2.substr(0, s2_optimal_divide_length),
+        dummy);
     auto res_right = DivideAndConquerAlignment(
         s1_right_part,
-        _s2.substr(s2_optimal_divide_length, _s2.size() - s2_optimal_divide_length));
+        _s2.substr(s2_optimal_divide_length, _s2.size() - s2_optimal_divide_length),
+        dummy);
 
     // Combine
     res.resize(res_right.size() + res_left.size());

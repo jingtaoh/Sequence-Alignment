@@ -19,6 +19,7 @@ int main(int argc, char** argv)
 
     // Compute OPT value table
     auto OPT_table = sa.ComputeMinimumAlignmentCost(s1, s2);
+    int OPT_value = OPT_table[OPT_table.size() - 1][OPT_table[0].size() - 1];
 
     // Reconstruct alignment
     auto alignment = sa.ReconstructAlignment(OPT_table, s1, s2);
@@ -26,6 +27,6 @@ int main(int argc, char** argv)
     // Generate output filename
     string output_file = OutputGenerator(program, input_file);
 
-    WriteFile(output_file, alignment);
+    WriteFile(output_file, alignment, OPT_value);
     return 0;
 }

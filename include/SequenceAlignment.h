@@ -38,7 +38,8 @@ public:
      * @param: s1: input string 1
      * @param: s2: input string 2
      **/
-    vector<pair<char, char>> DivideAndConquerAlignment(const string& _s1, const string& _s2);
+    vector<pair<char, char>>
+    DivideAndConquerAlignment(const string& _s1, const string& _s2, int& opt_value);
 
     /**
      * @brief: Space efficient way to compute the last row of the OPT table
