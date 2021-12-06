@@ -9,7 +9,9 @@ cmake ..
 make
 
 # Run basic program
+# output: ../data/output_basic.txt
 ./basic ../data/input.txt
 
 # Run efficient program
+# output: ../data/output_efficient.txt
 ./efficient ../data/input.txt
