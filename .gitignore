@@ -43,4 +43,5 @@
 /cmake-build-*
 /build*
 /_build
+/*_build
 #/data
