@@ -1,4 +1,5 @@
 #include "SequenceAlignment.h"
+#include <stack>
 
 SequenceAlignment::SequenceAlignment()
     : gap_penalty_(30)
@@ -55,7 +56,7 @@ vector<vector<int>> SequenceAlignment::ComputeMinimumAlignmentCost(
     return OPT;
 }
 
-stack<pair<int, int>> SequenceAlignment::ReconstructAlignment(
+vector<pair<char, char>> SequenceAlignment::ReconstructAlignment(
     vector<vector<int>>& table,
     const string& _s1,
     const string& _s2)
@@ -63,44 +64,44 @@ stack<pair<int, int>> SequenceAlignment::ReconstructAlignment(
     int i = table.size() - 1;
     int j = table[0].size() - 1;
 
-    stack<pair<int, int>> alignment;
+    vector<pair<char, char>> alignment;
     // The optimal alignment is not unique
     // Below is one of the ways to reconstruct alignment
-    while (i > 0 && j > 0) {
+    while (i > 0 || j > 0) {
         if (j - 1 >= 0 && table[i][j] == (table[i][j - 1] + gap_penalty_)) {
             // skip s2[j]
+            alignment.push_back({'_', _s2[j - 1]});
             j--;
         } else if (
             (i - 1) >= 0 && (j - 1) >= 0 &&
             table[i][j] ==
                 (table[i - 1][j - 1] + mismatch_penalty_table_[_s1[i - 1]][_s2[j - 1]])) {
             // s1[i] is matched with s2[j]
-            alignment.push({i - 1, j - 1});
+            alignment.push_back({_s1[i - 1], _s2[j - 1]});
             i--;
             j--;
         } else if ((i - 1) >= 0 && table[i][j] == (table[i - 1][j] + gap_penalty_)) {
             // skip s1[i]
+            alignment.push_back({_s1[i - 1], '_'});
             i--;
         }
     }
     return alignment;
 }
 
-
-stack<pair<int, int>> SequenceAlignment::DivideAndConquerAlignmentHelper(
-    const string& _s1,
-    const string& _s2)
+vector<pair<char, char>>
+SequenceAlignment::DivideAndConquerAlignment(const string& _s1, const string& _s2, int& opt_value)
 {
-    stack<pair<int, int>> res; // s1: 0-res[0]; s2: 0-res[1]; res[2] s1 & s2 mismatch penalty
     // Base Case
     if (_s1.size() <= 2 || _s2.size() <= 2) {
         vector<vector<int>> opt_table = ComputeMinimumAlignmentCost(_s1, _s2);
 
         return ReconstructAlignment(opt_table, _s1, _s2);
-        ;
     }
 
-    ///// Divide
+    vector<pair<char, char>> res;
+
+    // Divide
     int s1_mid = _s1.size() / 2;
     string s1_left_part = _s1.substr(0, s1_mid);
     vector<int> cost_left = SpaceEfficientAlignment(s1_left_part, _s2);
@@ -117,62 +118,26 @@ stack<pair<int, int>> SequenceAlignment::DivideAndConquerAlignmentHelper(
 
     int s2_optimal_divide_length =
         std::min_element(cost.begin(), cost.end()) - cost.begin(); // One of optimal cut lengths
-    // cout << "s2_optimal_divide_length: " << s2_optimal_divide_length << endl;
+    //    cout << "s2_optimal_divide_length: " << s2_optimal_divide_length << endl;
+    opt_value = cost[s2_optimal_divide_length];
 
-    //// Conquer
-    stack<pair<int, int>> stack_left =
-        DivideAndConquerAlignmentHelper(s1_left_part, _s2.substr(0, s2_optimal_divide_length));
-
-
-    stack<pair<int, int>> stack_right = DivideAndConquerAlignmentHelper(
+    int dummy;
+    // Conquer
+    auto res_left = DivideAndConquerAlignment(
+        s1_left_part,
+        _s2.substr(0, s2_optimal_divide_length),
+        dummy);
+    auto res_right = DivideAndConquerAlignment(
         s1_right_part,
-        _s2.substr(s2_optimal_divide_length, _s2.size() - s2_optimal_divide_length));
+        _s2.substr(s2_optimal_divide_length, _s2.size() - s2_optimal_divide_length),
+        dummy);
 
-    //// Combine
-    stack<pair<int, int>> tmp_stack2;
-    while (!stack_right.empty()) {
-        pair<int, int> tmp = stack_right.top();
-        stack_right.pop();
-        tmp.first += s1_mid;
-        tmp.second += s2_optimal_divide_length;
-        tmp_stack2.push(tmp);
-    }
-    while (!tmp_stack2.empty()) {
-        pair<int, int> tmp = tmp_stack2.top();
-        tmp_stack2.pop();
-        res.push(tmp);
-    }
+    // Combine
+    res.resize(res_right.size() + res_left.size());
+    move(res_right.begin(), res_right.end(), res.begin());
+    move(res_left.begin(), res_left.end(), res.begin() + res_right.size());
 
-    res.push({s1_mid - 1, s2_optimal_divide_length - 1});
-
-    stack<pair<int, int>> tmp_stack1;
-    while (!stack_left.empty()) {
-        pair<int, int> tmp = stack_left.top();
-        stack_left.pop();
-        tmp_stack1.push(tmp);
-    }
-    while (!tmp_stack1.empty()) {
-        pair<int, int> tmp = tmp_stack1.top();
-        tmp_stack1.pop();
-        res.push(tmp);
-    }
     return res;
-}
-
-map<int, int> SequenceAlignment::DivideAndConquerAlignment(const string& _s1, const string& _s2)
-{
-    stack<pair<int, int>> s = DivideAndConquerAlignmentHelper(_s1, _s2);
-    map<int, int> matches;
-    unordered_set<int> s2_set;
-    while (!s.empty()) {
-        pair<int, int> tmp = s.top();
-        if (!matches.count(tmp.first) && !s2_set.count(tmp.second)) {
-            matches[tmp.first] = tmp.second;
-            s2_set.insert(tmp.second);
-        }
-        s.pop();
-    }
-    return matches;
 }
 
 vector<int> SequenceAlignment::SpaceEfficientAlignment(const string& _s1, const string& _s2)
