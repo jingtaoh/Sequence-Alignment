@@ -95,7 +95,7 @@ string InputGenerator(const string& base_str, const vector<int>& indices)
 
 string OutputGenerator(string& program, string& input_file)
 {
-    program = fs::path(program).filename();
+    program = program.substr(program.find_last_of("/\\") + 1);
     string output_file = input_file.replace(input_file.find("input"), 5, "output");
     output_file.insert(output_file.find(".txt"), '_' + program);
     return output_file;

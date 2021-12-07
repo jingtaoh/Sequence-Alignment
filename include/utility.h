@@ -5,10 +5,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <filesystem>
 
 using namespace std;
-namespace fs = std::filesystem;
 
 /**
  * @brief: Read input from a given file
