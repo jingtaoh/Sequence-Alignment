@@ -2,13 +2,17 @@
 The project is the c++ implementation of the two different solutions provided in chapter 6 of the Kleinberg textbook for the Sequence Alignment problem (see [project description](CSCI570_Fall2021_FinalProject.pdf)).
 - [x] [Basic](src/basic.cpp) implementation
 - [x] [Memory efficient](src/efficient.cpp) implementation
-- [x] [Shell script](run.sh)
+- [x] Shell scripts
 - [x] [Graphs](graphs)
-- [ ] Summary
+- [ ] [Summary](summary.md)
 
 ## Compile & Run
 ```bash
-./run.sh
+# Compile and run basic program
+./run_basic.sh
+
+# Compile and run efficient program
+./run_efficient.sh
 ```
 ## Measure time & memory performance
 ```bash
