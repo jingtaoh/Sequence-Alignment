@@ -9,10 +9,10 @@ The project is the c++ implementation of the two different solutions provided in
 ## Compile & Run
 ```bash
 # Compile and run basic program
-./run_basic.sh
+./1942568982_2697735160_basic.sh
 
 # Compile and run efficient program
-./run_efficient.sh
+./1942568982_2697735160_efficient.sh
 ```
 ## Measure time & memory performance
 ```bash
