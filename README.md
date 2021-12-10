@@ -4,7 +4,7 @@ The project is the c++ implementation of the two different solutions provided in
 - [x] [Memory efficient](src/efficient.cpp) implementation
 - [x] Shell scripts
 - [x] [Graphs](graphs)
-- [ ] [Summary](summary.md)
+- [x] [Summary](summary.txt)
 
 ## Compile & Run
 ```bash
