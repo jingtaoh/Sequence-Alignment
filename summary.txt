@@ -1,0 +1,28 @@
+# Summary
+
+## Contributions 
+> Contributions of each student in the group.
+- Wentao Wang (USC-ID: 1942568982)
+    - Input Generator
+    - Basic Implementation
+    - Efficient Implementation
+- Jingtao Huang (USC-ID: 2697735160)
+    - Efficient Implementation
+    - Test data and graphs generation
+    - Shell scripts
+
+## Notes
+- The program requires cmake to build.
+- The plots are in `/graphs` folder along with test data and plot scripts using gnuplot.
+- Memory and time are measured using gnutime.
+
+## Insights & Observations
+> Comments on why the efficient and basic versions have different memory and time plots.
+- Memory
+  - In efficient version, by collapsing opt table into 2 columns and applying recursive calls sequentially, the total space usage is `O(m+n)`. 
+  - Whereas, in basic version, the space requirement is `O(mn)`, which is dominated by the cost of storing the opt table.
+- Time
+  - In lecture, we proved that the work of efficient version is increased by a factor of 2 compared to the original version. Therefore the time required to solve the problem is increased accordingly.
+
+Thank you for your time.
+  

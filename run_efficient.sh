@@ -6,8 +6,8 @@ cd $BUILD_DIR
 
 # Compile
 cmake ..
-cmake --build .
+cmake --build . --target efficient
 
-# Run program
+# Run
 # output: ../data/output_efficient.txt
 ./efficient ../data/input.txt

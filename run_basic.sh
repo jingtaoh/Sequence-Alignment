@@ -6,8 +6,8 @@ cd $BUILD_DIR
 
 # Compile
 cmake ..
-cmake --build .
+cmake --build . --target basic
 
-# Run program
+# Run
 # output: ../data/output_basic.txt
 ./basic ../data/input.txt
