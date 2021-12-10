@@ -1,4 +1,4 @@
-BUILD_DIR="new_build"
+BUILD_DIR="build"
 if [ ! -d "$BUILD_DIR" ]; then
   mkdir $BUILD_DIR
 fi
