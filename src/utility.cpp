@@ -75,7 +75,8 @@ void WriteFile(const string& filename, const vector<pair<char, char>>& alignment
     outFile << endl;
 
     // Print OPT value
-    outFile << opt_value << endl;
+    float float_opt_value = (float)opt_value;
+    outFile << fixed << setprecision(1) << float_opt_value << endl;
 }
 
 string InputGenerator(const string& base_str, const vector<int>& indices)
