@@ -1,3 +1,0 @@
-/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/rebuild_cache.dir
-/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/main.dir
-/home/wentao/C++ code/SequenceAlignment/build/CMakeFiles/edit_cache.dir
